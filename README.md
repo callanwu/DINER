@@ -9,7 +9,24 @@ As shown in (b), the desired situation for ABSA is that the edges that bring bia
 We present a novel debiasing framework, DINER, for multi-variable causal inference. 
 <p align="center"><img src='./assets/method.png'  width=500> </p>
 
-# 📖Citation
+## Requirements
+```
+conda create -n diner python=3.10
+conda activate diner
+pip install -r requirements.txt
+```
+
+## Run
+Our experiments are carried out with an NVIDIA A100 80GB GPU.
+```
+cd src
+bash run_diner.sh ${dataset_name}
+```
+
+## 🌻 Acknowledgement
+This work is implemented by [ARTS](https://github.com/zhijing-jin/ARTS_TestSet), [cfvqa](https://github.com/yuleiniu/cfvqa), and [CCD](https://github.com/farewellthree/Causal-Context-Debiasing). Sincere thanks for their efforts.
+
+## 📖Citation
 
 ```bibtex
 @misc{wu2024diner,
